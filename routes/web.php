@@ -36,6 +36,8 @@ Route::get('demoseven/{id}', function ($id) {
     return 'demoseven ID: '.$id;
 })->where('id', '[0-9]+');
 
+Route::get('/testlinenoti', 'DemoController@testlinenoti');
+
 Route::resource('photos', 'PhotoController');
 Route::resource('admin/users', 'Admin\UsersController');
 

@@ -8,7 +8,7 @@ class DemoController extends Controller
 {
     public function index()
     {
-        return "Method GET: Index";
+        return view('template');
     }
 
     public function demotwo()
@@ -24,5 +24,11 @@ class DemoController extends Controller
     public function demofour()
     {
         return "Method GET, POST, PUT/PATCH, DELETE : demofour";
+    }
+    public function testlinenoti()
+    {
+        $line_noti_token = "34uUAb3cTV2mt2fVRlmqGLeASmkH53T3D7PPlTHmBoE";
+notify_message("Hello World",$line_noti_token);
+        return 'ok';
     }
 }
