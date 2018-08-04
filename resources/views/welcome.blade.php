@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Training From Git
+                    Laravel Training
                 </div>
 
                 <div class="links">
